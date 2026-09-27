@@ -1,25 +1,132 @@
 @charset "utf-8";
 /* CSS Document */
-body{
-  font-family: "Sedan", serif;
+
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-.tabela-pedigree{
-	text-transform: uppercase;
-	
-	img{display: block; margin: 0 auto;}
-	
-	td {text-align: center;}
-	
-	img.g1 {max-width:  250px;}
-	img.g2 {max-width:  160px;} 
-	img.g3 {max-width:  100px;} 
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 
+.kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .mastlinkshead {
   padding-top: 3rem;
@@ -51,7 +158,7 @@ body{
 }
 
 .links-page-section {
-  padding: 3rem 0; margin-bottom: 4rem;
+  padding: 4rem 0;
 }
 
 .links-page-section .btn-xl{
@@ -67,6 +174,55 @@ body{
   .links-page-section .page-section-heading {
     font-size: 3rem;
     line-height: 2.5rem;
-	margin-bottom: 3rem;
   }
+}
+
+
+.chihuahuaheader {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+.chihuahuaheader .chihuahuaheader-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.chihuahuaheader .chihuahuaheader-subheading {
+  font-size: 1.45rem;
+}
+/* Carousel base class */
+.carousel {
+ 
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+   
+}
+
+
+.portfolio-modal .portfolio-modal-name {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-name {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+.portfolio-modal .portfolio-modal-pedigreename {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-pedigreename {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+.btn-social-img {
+  width: 3.25rem;
+  height: 3.25rem;
 }

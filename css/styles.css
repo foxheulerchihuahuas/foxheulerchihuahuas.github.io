@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #0e244c;
-  --bs-primary: #38434f;
+  --bs-primary: #09172d;
   --bs-secondary: #0e244c;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #0e244c;
-  --bs-primary-rgb: 0, 7, 18;
+  --bs-primary-rgb: 9, 23, 45;
   --bs-secondary-rgb: 33, 44, 87;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -56,12 +56,14 @@
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Sedan", serif;
-  --bs-body-font-size: 1rem;
+  --bs-body-font-family: "Barlow", sans-serif;
+  --bs-title-font-family:  "Kalam", cursive;
+  --bs-body-font-size: 1.2rem;
+  --bs-nav-link-font-size: 1.2rem;	
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #fff;
-  --bs-body-bg: #000712;
+  --bs-body-color: #000712;
+  --bs-body-bg: #fff;
   --bs-border-width: 0.125rem;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -76,6 +78,7 @@
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+	
 }
 
 *,
@@ -2845,8 +2848,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0e244c;
-  --bs-btn-border-color: #0e244c;
+  --bs-btn-bg: #2d5ba2;
+  --bs-btn-border-color: #2d5ba2;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #38668f;
   --bs-btn-hover-border-color: #2d5a7c;
@@ -2856,8 +2859,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: #2d5a7c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0e244c;
-  --bs-btn-disabled-border-color: #0e244c;
+  --bs-btn-disabled-bg: #2d5ba2;
+  --bs-btn-disabled-border-color: #2d5ba2;
 }
 
 .btn-secondary {
@@ -2980,19 +2983,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #0e244c;
-  --bs-btn-border-color: #0e244c;
+  --bs-btn-color: #2d5ba2;
+  --bs-btn-border-color: #2d5ba2;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0e244c;
-  --bs-btn-hover-border-color: #0e244c;
+  --bs-btn-hover-bg: #2d5ba2;
+  --bs-btn-hover-border-color: #2d5ba2;
   --bs-btn-focus-shadow-rgb: 26, 188, 156;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0e244c;
-  --bs-btn-active-border-color: #0e244c;
+  --bs-btn-active-bg: #2d5ba2;
+  --bs-btn-active-border-color: #2d5ba2;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #0e244c;
+  --bs-btn-disabled-color: #2d5ba2;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #0e244c;
+  --bs-btn-disabled-border-color: #2d5ba2;
   --bs-gradient: none;
 }
 
@@ -10933,7 +10936,7 @@ html {
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.7em;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
@@ -10982,7 +10985,7 @@ html {
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
 }
 .masthead .masthead-avatar {
   width: 50rem;
@@ -10998,7 +11001,7 @@ html {
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 .portfolio .portfolio-item {
@@ -11027,21 +11030,22 @@ html {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff6d9;
+  background-color: #d7e7ff;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-  font-size: 1.7rem;
-  font-family: var(--bs-body-font-family);
+  font-size: 2.5rem;
+  font-family: var(--bs-title-font-family);
   font-weight: 700;
   margin-bottom: 0;
+  line-height: 1;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-weight: bold;
   text-transform: uppercase;
   color: #38434f;
   font-family: var(--bs-body-font-family);
+  line-height: 1;
 }
-
 
 .portfolio-modal .btn-close {
   color: #38434f;
@@ -11058,7 +11062,10 @@ html {
     line-height: 2.5rem;
   }
 }
-
+.section-intro {
+	font-size: 1.3em;
+	margin-bottom: 2rem;
+}
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
